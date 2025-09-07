@@ -1,0 +1,14 @@
+body, html, #root, .app-bg {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

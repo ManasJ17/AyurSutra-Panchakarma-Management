@@ -1,0 +1,98 @@
+.auth-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  width: 350px;
+  max-width: 95vw;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.auth-card h2 {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.auth-card input {
+  padding: 0.7rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.auth-card input:focus {
+  border: 1.5px solid #8ec5fc;
+  outline: none;
+}
+.auth-card button[type="submit"] {
+  background: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
+  border: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.auth-card button[type="submit"]:hover {
+  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.role-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.role-toggle button {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.role-toggle .active {
+  background: #8ec5fc;
+  color: #fff;
+}
+.toggle-link {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.toggle-link button {
+  background: none;
+  border: none;
+  color: #8ec5fc;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.error-msg {
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.success-msg {
+  color: #388e3c;
+  background: #e8f5e9;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
